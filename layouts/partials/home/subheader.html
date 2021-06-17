@@ -1,0 +1,12 @@
+{{ range where .Site.Pages "Type" "subheader" }}
+<!-- <div class="row section topspace"> -->
+<!--    <div class="col-md-12"> -->
+     <div class="row topspace">
+        <div class="col-sm-8 col-sm-offset-2">
+<!--        <div class="lead text-center text-muted"> -->
+           {{ .Content }}
+<!--        </div> -->
+    </div>
+</div>
+<!-- / section -->
+{{ end }}
